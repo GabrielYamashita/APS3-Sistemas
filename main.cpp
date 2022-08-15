@@ -8,14 +8,8 @@ DigitalIn menos(D9);      // Botão para Diminuir Velocidade
 
 
 int main() { // Main()
-    while(1) { // Loop Iinfinito
+    while(1) { // Loop Infinito
         OUT = !OUT; // Inverte o Valor do OUT
-        if(mais == 0) {  // Botão Mais Pressionado
-            wait_ms(2);  // 2x Velocidade 
-        } else if(menos == 0) {   // Botão Menos Pressionado
-            wait_ms(8);           // 0.5x Velocidade 
-        } else {         // Nenhum Botão Pressionado
-            wait_ms(4);  // Velocidade Nominal
-        }
+        wait_ms(4);  // Velocidade Nominal
     }
 }
